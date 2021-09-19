@@ -1,0 +1,312 @@
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 18%;
+  float: left;
+
+}
+img{
+  width: 30px;
+  height: 25px;
+  visibility: hidden;
+
+}
+
+nav .logo{
+  width: 100%;
+  height: 25vh;
+  text-align: center;
+  padding: 50px;
+  font-size: 25px;
+  font-family: 'Abril Fatface', cursive;
+
+
+}
+
+nav .menu{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 65px;
+  margin-top: 20px;
+}
+
+nav .menu a{
+  color: #808080;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+nav .menu a:first-child{
+  text-decoration: line-through red;
+}
+
+button{
+  padding: 12px 45px;
+  border: none;
+  background-color: #ff4d4d;
+  color:#fff;
+  border-radius: 20px;
+  margin-left: 60px;
+  margin-top:50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover{
+  background-color: #000;
+  color:#fff;
+}
+
+main{
+  width: 82%;
+  float: left;
+}
+
+
+main .lun{
+  width: 70%;
+  height: 60vh;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+
+}
+
+main .discr{
+
+  float: left;
+  display: flex;
+  align-items: center ;
+
+
+}
+main .lun h1{
+  font-size: auto;
+  font-family: 'Abril Fatface', cursive;
+  line-height: 1.6;
+}
+
+main .discr p{
+  font-family: sans-serif;
+  color: #808080;
+  line-height: 1.6;
+  padding-top: 5%;
+  width: auto;
+  word-break: keep-all;
+  padding-right: 20px;
+}
+
+main .discr p::after{
+  content: "_______";
+  color:#ff4d4d;
+  font-weight: bold;
+}
+
+main .sec2{
+  width:100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.taco,.pizza,.burger,.nachos,.noodles{
+  width: 150px;
+  height: 190px;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  box-shadow: 6px 9px 25px 3px #bfbfbf;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+}
+
+.tacopic,.pizzapic,.burgerpic,.nachospic,.noodlespic{
+  width:105px;
+  height:105px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  border-radius:52px;
+}
+
+.taco p,.pizza p,.burger p,.nachos p,.noodles p{
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 25px;
+}
+
+.tacopic{
+  background-image: url("../images/mexican-taco.jpg");
+  background-size: cover;
+}
+
+.pizzapic{
+  background-image: url("../images/farmhouse-pizza.jpg");
+  background-size: cover;
+}
+
+
+.burgerpic{
+  background-image: url("../images/chicken-burger.jpg");
+  background-size: cover;
+}
+
+
+.nachospic{
+  background-image: url("../images/loaded-nachos.jpg");
+  background-size: cover;
+}
+
+.noodlespic{
+  background-image: url("../images/hakka-noodles.jpg");
+  background-size: cover;
+
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  visibility: hidden;
+}
+.bar1{
+  width: 18px;
+  height: 3px;
+  background-color: #ff4d4d;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius:3px;
+
+	}
+
+.bar2 {
+  width: 28px;
+  height: 3px;
+  background-color: #ff4d4d;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius:3px;
+  margin-top: 5px;
+}
+ .bar3{
+  width: 23px;
+  height: 3px;
+  background-color: #ff4d4d;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius:3px;
+  margin-top: 5px;
+ }
+
+@media only screen and (min-width:700px){
+  .lun h1{
+    font-size: 65px;
+  }
+  main .discr{
+    width: 30%;
+    height: 60vh;
+  }
+}
+@media only screen and (max-width:700px) {
+
+   .logo h1{
+     font-size: 27px;
+     position: relative;
+     bottom: 20px;
+     left: 90px
+   }
+   nav .menu{
+     display: none;
+   }
+   button{
+     display: none;
+   }
+
+   nav{
+     width: 100%;
+     display: flex;
+
+
+   }
+
+   img{
+     visibility: visible;
+     position: absolute;
+     right: 30px;
+     top: 40px;
+     cursor: pointer;
+   }
+   main{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+   }
+    span{
+     display: none;
+   }
+
+   .lun h1{
+     line-height: normal;
+     position: absolute;
+     font-size: 30px;
+     top:120px;
+     left:30px;
+   }
+
+   .discr{
+     position:absolute;
+     width: 100%;
+     bottom: -90px;
+     height: 100px;
+     left: 20px;
+
+
+
+   }
+
+   .discr p{
+     padding: 10px;
+   }
+
+    .sec2{
+      display: flex;
+    }
+   .taco,.pizza,.burger,.nachos,.noodles{
+     margin-bottom: 20px;
+     width: 150px;
+     height: 190px;
+     position: relative;
+     top:-340px;
+
+   }
+
+   .noodles{
+     display: none;
+   }
+   .tacopic,.pizzapic,.burgerpic,.nachospic,.noodlespic{
+     width: 105px;
+     height: 105px;
+   }
+    .taco p,.pizza p,.burger p,.nachos p,.noodles p{
+      font-size: 10px;
+      padding-bottom: 10px;
+    }
+
+    .container{
+      visibility: visible;
+      position: absolute;
+      left:30px;
+      top:35px;
+    }
+}
